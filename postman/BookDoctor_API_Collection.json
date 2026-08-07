@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "Book-A-Doctor API",
+    "description": "Complete API collection for the Book-A-Doctor application",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        { "name": "Register", "request": { "method": "POST", "url": "{{BASE_URL}}/auth/register" } },
+        { "name": "Login", "request": { "method": "POST", "url": "{{BASE_URL}}/auth/login" } },
+        { "name": "Get Profile", "request": { "method": "GET", "url": "{{BASE_URL}}/auth/profile" } }
+      ]
+    },
+    {
+      "name": "Doctors",
+      "item": [
+        { "name": "Get All Doctors", "request": { "method": "GET", "url": "{{BASE_URL}}/doctors" } },
+        { "name": "Get Doctor by ID", "request": { "method": "GET", "url": "{{BASE_URL}}/doctors/:id" } },
+        { "name": "Create Doctor", "request": { "method": "POST", "url": "{{BASE_URL}}/doctors" } }
+      ]
+    },
+    {
+      "name": "Appointments",
+      "item": [
+        { "name": "Book Appointment", "request": { "method": "POST", "url": "{{BASE_URL}}/appointments" } },
+        { "name": "My Appointments", "request": { "method": "GET", "url": "{{BASE_URL}}/appointments/my" } },
+        { "name": "Cancel Appointment", "request": { "method": "PUT", "url": "{{BASE_URL}}/appointments/:id/cancel" } }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        { "name": "Dashboard Stats", "request": { "method": "GET", "url": "{{BASE_URL}}/admin/stats" } },
+        { "name": "Manage Users", "request": { "method": "GET", "url": "{{BASE_URL}}/admin/users" } }
+      ]
+    }
+  ],
+  "variable": [{ "key": "BASE_URL", "value": "http://localhost:5000/api" }]
+}

@@ -1,0 +1,61 @@
+.my-appts-page { padding-top: 100px; }
+
+.my-appts-header { margin-bottom: 28px; }
+.my-appts-header h1 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1e293b;
+}
+.my-appts-subtitle { color: #64748b; margin-top: 4px; }
+
+.appt-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.appt-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 2px solid #e2e8f0;
+  background: white;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: capitalize;
+}
+.appt-filter-btn:hover { border-color: #93c5fd; color: #2563eb; background: #f0f7ff; }
+.appt-filter-btn.active {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+.filter-count {
+  background: rgba(255,255,255,0.25);
+  color: inherit;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.appt-filter-btn:not(.active) .filter-count {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.appts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .appts-grid { grid-template-columns: 1fr; }
+}

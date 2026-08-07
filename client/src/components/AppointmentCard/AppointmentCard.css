@@ -1,0 +1,95 @@
+.appt-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  animation: fadeInUp 0.4s ease forwards;
+}
+.appt-card:hover { box-shadow: 0 8px 24px rgba(37,99,235,0.12); transform: translateY(-2px); }
+.appt-card--cancelled { opacity: 0.75; }
+.appt-card--completed { background: #fafafa; }
+
+.appt-card__header {
+  padding: 20px 20px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f9;
+}
+.appt-doctor-info { display: flex; align-items: center; gap: 12px; }
+.appt-avatar img, .appt-avatar-ph {
+  width: 52px; height: 52px; border-radius: 50%;
+}
+.appt-avatar img { object-fit: cover; border: 2px solid #dbeafe; }
+.appt-avatar-ph {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white; font-size: 1.2rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.appt-doctor-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  font-family: 'Poppins', sans-serif;
+}
+.appt-specialty {
+  font-size: 0.8rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.appt-card__body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appt-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.appt-detail__icon { font-size: 1rem; margin-top: 1px; }
+.appt-detail__label {
+  display: block;
+  font-size: 0.74rem;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.appt-detail__value {
+  display: block;
+  font-size: 0.9rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.appt-card__actions {
+  padding: 14px 20px 18px;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+.btn-upload, .btn-cancel-appt {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.btn-upload {
+  background: #dbeafe;
+  color: #2563eb;
+  flex: 1;
+  text-align: center;
+}
+.btn-upload:hover { background: #bfdbfe; }
+.btn-cancel-appt {
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+}
+.btn-cancel-appt:hover { background: #fca5a5; color: #991b1b; }

@@ -1,0 +1,106 @@
+.upload-page { padding-top: 100px; }
+
+.upload-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.upload-header { margin-bottom: 28px; }
+.back-link {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 16px;
+  transition: opacity 0.2s;
+}
+.back-link:hover { opacity: 0.7; }
+.upload-header h1 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+.upload-header p { color: #64748b; }
+
+/* Drop Zone */
+.drop-zone {
+  border: 2.5px dashed #cbd5e1;
+  border-radius: 20px;
+  padding: 56px 32px;
+  text-align: center;
+  background: #f8faff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 24px;
+}
+.drop-zone:hover, .drop-zone.drag-over {
+  border-color: #2563eb;
+  background: #f0f7ff;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.08);
+}
+.drop-zone.has-file {
+  border-color: #10b981;
+  background: #f0fdf4;
+  padding: 28px 32px;
+}
+
+.drop-zone-prompt {}
+.drop-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.drop-zone h3 { font-size: 1.1rem; color: #1e293b; margin-bottom: 6px; }
+.drop-zone p { font-size: 0.88rem; color: #64748b; }
+
+/* File Preview */
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+.file-icon { font-size: 2.5rem; }
+.file-info { flex: 1; }
+.file-info strong { display: block; font-size: 0.95rem; color: #1e293b; word-break: break-all; }
+.file-info span { font-size: 0.82rem; color: #64748b; }
+.remove-file {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.remove-file:hover { background: #fca5a5; }
+
+/* Upload Types */
+.upload-types {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.upload-type-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 12px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #475569;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.upload-type-item span { font-size: 1.4rem; }
+
+@media (max-width: 480px) {
+  .upload-types { grid-template-columns: repeat(2, 1fr); }
+  .drop-zone { padding: 36px 20px; }
+}

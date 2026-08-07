@@ -1,0 +1,129 @@
+.book-page { padding-top: 100px; }
+
+.book-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Doctor Card */
+.book-doctor-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.08);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  position: sticky;
+  top: 90px;
+}
+.book-doctor-header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white;
+}
+.book-avatar img, .book-avatar-ph {
+  width: 68px; height: 68px; border-radius: 50%;
+}
+.book-avatar img { object-fit: cover; border: 3px solid rgba(255,255,255,0.3); }
+.book-avatar-ph {
+  background: rgba(255,255,255,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; font-weight: 700; color: white;
+  border: 3px solid rgba(255,255,255,0.3);
+}
+.book-doctor-header h2 { font-size: 1.1rem; color: white; margin-bottom: 4px; }
+.book-specialty { color: rgba(255,255,255,0.7); font-size: 0.85rem; }
+
+.book-doctor-details {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.book-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.book-info-box {
+  padding: 20px 24px;
+  background: #f8faff;
+}
+.book-info-box h4 { font-size: 0.9rem; color: #1e293b; margin-bottom: 10px; }
+.book-info-box ul { display: flex; flex-direction: column; gap: 6px; padding-left: 16px; }
+.book-info-box li { font-size: 0.83rem; color: #64748b; line-height: 1.5; }
+
+/* Form Card */
+.book-form-card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.08);
+  border: 1px solid #e2e8f0;
+}
+.book-form-title {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 28px;
+}
+
+/* Time Slots */
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 4px;
+}
+.time-slot-btn {
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 2px solid #e2e8f0;
+  background: white;
+  color: #475569;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.time-slot-btn:hover { border-color: #93c5fd; color: #2563eb; background: #f0f7ff; }
+.time-slot-btn.selected {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+
+/* Success Card */
+.success-card {
+  max-width: 480px;
+  margin: 80px auto;
+  background: white;
+  border-radius: 24px;
+  padding: 56px 40px;
+  text-align: center;
+  box-shadow: 0 16px 48px rgba(37,99,235,0.12);
+  border: 2px solid #d1fae5;
+}
+.success-icon { font-size: 4rem; margin-bottom: 20px; }
+.success-card h2 { font-size: 1.6rem; color: #1e293b; margin-bottom: 12px; }
+.success-card p { color: #64748b; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .book-grid { grid-template-columns: 1fr; }
+  .book-doctor-card { position: static; }
+  .time-slots-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 480px) {
+  .time-slots-grid { grid-template-columns: repeat(2, 1fr); }
+  .book-form-card { padding: 24px; }
+}

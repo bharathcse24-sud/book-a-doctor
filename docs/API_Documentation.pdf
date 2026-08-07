@@ -1,0 +1,37 @@
+﻿BookADoctor - API Documentation
+================================
+
+BASE URL: http://localhost:5000/api
+
+AUTH ENDPOINTS
+--------------
+POST   /auth/register    - Register a new user
+POST   /auth/login       - Login and receive JWT token
+GET    /auth/profile     - Get current user profile (protected)
+PUT    /auth/profile     - Update user profile (protected)
+
+DOCTOR ENDPOINTS
+----------------
+GET    /doctors              - Get all doctors (with optional ?specialty=X&search=Y)
+GET    /doctors/:id          - Get doctor by ID
+POST   /doctors              - Create doctor (admin only)
+PUT    /doctors/:id          - Update doctor (admin only)
+DELETE /doctors/:id          - Delete doctor (admin only)
+
+APPOINTMENT ENDPOINTS
+---------------------
+POST   /appointments             - Book an appointment (protected)
+GET    /appointments/my          - Get patient's appointments (protected)
+PUT    /appointments/:id/cancel  - Cancel an appointment (protected)
+GET    /appointments/all         - Get all appointments (admin only)
+
+UPLOAD ENDPOINTS
+----------------
+POST   /upload/:appointmentId    - Upload a medical report (protected, multipart/form-data)
+
+ADMIN ENDPOINTS
+---------------
+GET    /admin/stats   - Dashboard statistics (admin only)
+GET    /admin/users   - List all users (admin only)
+
+NOTE: Replace this placeholder with the actual API_Documentation.pdf document.

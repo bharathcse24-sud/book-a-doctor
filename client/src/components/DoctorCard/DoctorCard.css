@@ -1,0 +1,122 @@
+.doctor-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  flex-direction: column;
+}
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(37,99,235,0.16);
+  border-color: #93c5fd;
+}
+
+.doctor-card__header {
+  padding: 24px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.doctor-card__avatar { position: relative; }
+.doctor-card__avatar img {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dbeafe;
+}
+.avatar-placeholder {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.available-dot {
+  position: absolute;
+  bottom: 4px; right: 4px;
+  width: 14px; height: 14px;
+  background: #10b981;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.2);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(16,185,129,0.2); }
+  50% { box-shadow: 0 0 0 6px rgba(16,185,129,0.05); }
+}
+
+.doctor-card__rating {
+  color: #f59e0b;
+  font-size: 0.9rem;
+}
+.doctor-card__rating span { color: #94a3b8; font-size: 0.78rem; margin-left: 4px; }
+
+.doctor-card__body { padding: 16px 24px; flex: 1; }
+.doctor-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+.doctor-specialty {
+  font-size: 0.88rem;
+  color: #2563eb;
+  font-weight: 600;
+  background: #dbeafe;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+.doctor-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.84rem;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+.doctor-quals { display: flex; flex-wrap: wrap; gap: 6px; }
+.qual-tag {
+  font-size: 0.75rem;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.doctor-card__actions {
+  padding: 16px 24px 24px;
+  display: flex;
+  gap: 10px;
+}
+.btn-view-profile, .btn-book-now {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s;
+}
+.btn-view-profile {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background: transparent;
+}
+.btn-view-profile:hover { background: #dbeafe; }
+.btn-book-now {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+.btn-book-now:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(37,99,235,0.4); }

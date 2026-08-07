@@ -8,7 +8,8 @@ Designed and implemented with a clean **MERN Stack** architecture (MongoDB, Expr
 ## 🔗 DEMO AND GITHUB REPOSITORY LINKS
 
 > [!IMPORTANT]
-> - 🌐 **GitHub Repository:** https://github.com/bharathcse24-sud/book-a-doctor
+> - 🚀 **Live Demo (Render):** https://book-a-doctor-v1ai.onrender.com
+> - 🐙 **GitHub Repository:** https://github.com/bharathcse24-sud/book-a-doctor
 > - 🔑 **Pre-configured Admin Account**
 >   - Account Email: `admin@gmail.com`
 >   - Password: `admin123`
@@ -340,7 +341,8 @@ npm run dev
 
 ## 📋 DEMO & EVALUATION LINKS SUMMARY
 
-- **GitHub Repository:** https://github.com/bharathcse24-sud/book-a-doctor
+- **🚀 Live Demo (Render):** https://book-a-doctor-v1ai.onrender.com
+- **🐙 GitHub Repository:** https://github.com/bharathcse24-sud/book-a-doctor
 - **Admin Email:** `admin@gmail.com`
 - **Admin Password:** `admin123`
 

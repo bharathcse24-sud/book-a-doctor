@@ -8,7 +8,7 @@ Designed and implemented with a clean **MERN Stack** architecture (MongoDB, Expr
 ## 🔗 DEMO AND GITHUB REPOSITORY LINKS
 
 > [!IMPORTANT]
-> - ⚡ **Live Frontend (Vercel):** https://book-a-doctor-self.vercel.app
+> - ⚡ **Live Frontend (Vercel):** https://book-a-doctor-one-peach.vercel.app/
 > - 🚀 **Live Backend API (Render):** https://book-a-doctor-v1ai.onrender.com
 > - 🐙 **GitHub Repository:** https://github.com/bharathcse24-sud/book-a-doctor
 > - 🔑 **Pre-configured Admin Account**
